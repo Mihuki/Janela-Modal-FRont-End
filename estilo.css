@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(103, 118, 129);
+    color: #900;
+}
+
+h1{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    color: rgb(33, 128, 160);
+}
+
+.janelamodal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+
+}
+
+#modal:checked + .janelamodal{
+    display: flex;
+}
+
+.checkbox{
+    display: none;
+}
+.janelamodal .fechamodal{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.janelamodal .fechamodal:hover{
+    cursor: pointer;
+    color: rgb(68, 43, 92);
+}
+.janelamodal .conteudo{
+    width: 75%;
+    height: 50%;
+    background-color: azure;
+    border: 20px solid rgb(130, 97, 150);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+    overflow: auto;
+}
+
+.abrir{
+    cursor: grab;
+}
+
+.janelamodal .conteudo p{
+    color: rgb(68, 43, 92);
+    margin: 10px;
+}
+
+img{
+    height: 65%;
+}
